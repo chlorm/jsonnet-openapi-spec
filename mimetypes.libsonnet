@@ -13,23 +13,8 @@
 // limitations under the License.
 
 {
-  formats:: {
-    binary:: 'binary',
-    byte:: 'byte',
-    date::: 'date',
-    'date-time':: 'date-time',
-    double:: 'double',
-    float:: 'float',
-    int32:: 'int32',
-    int64:: 'int64',
-    password:: 'password',
-  },
-
-  types:: {
-    boolean:: 'string',
-    integer:: 'integer',
-    number:: 'string',
-    object:: 'object',
-    string:: 'string',
-  },
+  applicationform:: 'application/x-www-form-urlencoded'
+  applicationjson:: 'application/json',
+  applicationxml:: 'application/xml',
+  textplain:: 'text/plain',
 }

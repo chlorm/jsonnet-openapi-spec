@@ -13,6 +13,9 @@
 # limitations under the License.
 
 {
+  path:: 'path',
+  query:: 'query',
+
   // https://swagger.io/specification/#parameterObject
   new():: {
     name(s):: self {
