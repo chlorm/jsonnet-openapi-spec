@@ -16,6 +16,18 @@
   path:: 'path',
   query:: 'query',
 
+  styles:: {
+    // Path
+    simple:: 'simple',
+    label:: 'label',
+    matrix:: 'matrix',
+    // Query
+    form:: 'form',
+    spaceDelimited:: 'spaceDilimited',
+    pipeDilimited:: 'pipeDilimited',
+    deepObject:: 'deepObject',
+  },
+
   // https://swagger.io/specification/#parameterObject
   new():: {
     name(s):: self {
@@ -48,6 +60,7 @@
       allowEmptyValue: b,
     },
 
+    // FIXME: validate
     style(s):: self {
       assert std.isString(s),
       style: s,
