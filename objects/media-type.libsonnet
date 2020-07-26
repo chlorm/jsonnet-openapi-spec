@@ -13,6 +13,11 @@
 // limitations under the License.
 
 {
+  form:: 'application/x-www-form-urlencoded',
+  json:: 'application/json',
+  plaintext:: 'text/plain',
+  xml:: 'application/xml',
+
   // https://swagger.io/specification/#mediaTypeObject
   new():: {
     Schema(schemaObject):: self {

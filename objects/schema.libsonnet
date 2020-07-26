@@ -13,5 +13,24 @@
 // limitations under the License.
 
 {
+  // Data Types
+  array:: 'array',
+  boolean:: 'boolean',
+  integer:: 'integer',
+  number:: 'number',
+  object:: 'object',
+  string:: 'string',
+
+  // Formats
+  binary:: 'binary',
+  byte:: 'byte',
+  date:: 'date',
+  datetime:: 'date-time',
+  double:: 'double',
+  float:: 'float',
+  int32:: 'int32',
+  int64:: 'int64',
+  password:: 'password',
+
   // https://swagger.io/specification/#schemaObject
 }

@@ -71,14 +71,6 @@
   xml::
     import 'objects/xml.libsonnet',
 
-  // Helper functions
-  formats::
-    import 'extra/formats.libsonnet',
-  mimetypes::
-    import 'extra/mimetypes.libsonnet',
-  types::
-    import 'extra/types.libsonnet',
-
   // https://swagger.io/specification/#oasObject
   // TODO: Spec exts
   new():: {
