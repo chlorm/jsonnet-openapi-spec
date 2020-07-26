@@ -19,20 +19,26 @@
   xml:: 'application/xml',
 
   // https://swagger.io/specification/#mediaTypeObject
-  new():: {
+  new(mimeType):: {
     Schema(schemaObject):: self {
       assert std.isObject(schemaObject),
-      schema: schemaObject,
+      [mimeType]+: {
+        schema: schemaObject,
+      },
     },
 
     Example(exampleObject):: self {
       assert std.isObject(exampleObject),
-      examples+: exampleObject,
+      [mimeType]+: {
+        examples+: exampleObject,
+      },
     },
 
     Encoding(encodingObject):: self {
       assert std.isObject(encodingObject),
-      encoding+: encodingObject,
+      [mimeType]+: {
+        encoding+: encodingObject,
+      },
     },
   },
 }
