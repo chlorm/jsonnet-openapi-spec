@@ -15,22 +15,22 @@
 {
   // https://swagger.io/specification/#oauthFlowsObject
   new():: {
-    implicit(oauthFlowObject):: self {
+    Implicit(oauthFlowObject):: self {
       assert std.isObject(oauthFlowObject),
       implicit: oauthFlowObject,
     },
 
-    password(oauthFlowObject):: self {
+    Password(oauthFlowObject):: self {
       assert std.isObject(oauthFlowObject),
       password: oauthFlowObject,
     },
 
-    clientcredentials(oauthFlowObject):: self {
+    ClientCredentials(oauthFlowObject):: self {
       assert std.isObject(oauthFlowObject),
       clientCredentials: oauthFlowObject,
     },
 
-    authorazationcode(oauthFlowObject):: self {
+    AuthorazationCode(oauthFlowObject):: self {
       assert std.isObject(oauthFlowObject),
       authorizationCode: oauthFlowObject,
     },

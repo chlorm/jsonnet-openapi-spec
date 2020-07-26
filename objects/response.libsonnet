@@ -93,28 +93,28 @@
     assert std.isNumber(status) || status == 'default',
     local statusString = std.toString(status),
 
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       [statusString]+: {
         description: s,
       },
     },
 
-    header(headerObject):: self {
+    Header(headerObject):: self {
       assert std.isObject(headerObject),
       [statusString]+: {
         headers+: headerObject,
       },
     },
 
-    content(mediaTypeObject):: self {
+    Content(mediaTypeObject):: self {
       assert std.isObject(mediaTypeObject),
       [statusString]+: {
         content+: mediaTypeObject,
       },
     },
 
-    link(linkObject):: self {
+    Link(linkObject):: self {
       assert std.isObject(linkObject),
       [statusString]+: {
         links+: linkObject,

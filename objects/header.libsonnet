@@ -19,70 +19,70 @@
     // Reserved headers cannot be defined manually.
     assert name != 'Accept' && name != 'Authorization' && name != 'Content-Type',
 
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       [name]+: {
         description: s,
       },
     },
 
-    required(b):: self {
+    Required(b):: self {
       assert std.isBoolean(b),
       [name]+: {
         required: b,
       },
     },
 
-    deprecated(b):: self {
+    Deprecated(b):: self {
       assert std.isBoolean(b),
       [name]+: {
         deprecated: b,
       },
     },
 
-    allowemptyvalue(b):: self {
+    AllowEmptyValue(b):: self {
       assert std.isBoolean(b),
       [name]+: {
         allowEmptyValue: b,
       },
     },
 
-    style(s):: self {
+    Style(s):: self {
       assert std.isString(s),
       [name]+: {
         style: s,
       },
     },
 
-    explode(b):: self {
+    Explode(b):: self {
       assert std.isBoolean(b),
       [name]+: {
         explode: b,
       },
     },
 
-    allowreserved(b):: self {
+    AllowReserved(b):: self {
       assert std.isBoolean(b),
       [name]+: {
         allowReserved: b,
       },
     },
 
-    schema(schemaObject):: self {
+    Schema(schemaObject):: self {
       assert std.isObject(schemaObject),
       [name]+: {
         schema: schemaObject,
       },
     },
 
-    example(exampleObject):: self {
+    Example(exampleObject):: self {
       assert std.isObject(exampleObject),
       [name]+: {
         examples: exampleObject,
       },
     },
 
-    content(contentObject):: self {
+    Content(contentObject):: self {
       assert std.isObject(contentObject),
       [name]+: {
         content: contentObject,

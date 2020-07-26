@@ -15,42 +15,42 @@
 {
   // https://swagger.io/specification/#securitySchemeObject
   new():: {
-    type(s):: self {
+    Type(s):: self {
       assert std.isString(s),
       type: s,
     },
 
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       description: s,
     },
 
-    name(s):: self {
+    Name(s):: self {
       assert std.isString(s),
       name: s,
     },
 
-    in_(s):: self {
+    In(s):: self {
       assert std.isString(s),
       'in': s,
     },
 
-    scheme(s):: self {
+    Scheme(s):: self {
       assert std.isString(s),
       scheme: s,
     },
 
-    bearerFormat(s):: self {
+    BearerFormat(s):: self {
       assert std.isString(s),
       bearerFormat: s,
     },
 
-    flows(oauthFlowsObject):: self {
+    Flows(oauthFlowsObject):: self {
       assert std.isObject(oauthFlowsObject),
       flows: oauthFlowsObject,
     },
 
-    openIdConnectUrl(s):: self {
+    OpenIdConnectUrl(s):: self {
       assert std.isString(s),
       openIdConnectUrl: s,
     },

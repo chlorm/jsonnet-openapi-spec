@@ -15,12 +15,12 @@
 {
   // https://swagger.io/specification/#discriminatorObject
   new():: {
-    propertyName(s):: self {
+    PropertyName(s):: self {
       assert std.isString(s),
       propertyName: s,
     },
 
-    mapping(key value):: self {
+    Mapping(key value):: self {
       assert std.isString(key)
       assert std.isString(value)
       mapping+: {

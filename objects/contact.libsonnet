@@ -15,17 +15,17 @@
 {
   // https://swagger.io/specification/#contactObject
   new():: {
-    name(s):: self {
+    Name(s):: self {
       assert std.isString(s),
       name: s,
     },
 
-    url(s):: self {
+    Url(s):: self {
       assert std.isString(s),
       url: s,
     },
 
-    email(s):: self {
+    Email(s):: self {
       assert std.isString(s),
       email: s,
     },

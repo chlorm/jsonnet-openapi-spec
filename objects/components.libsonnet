@@ -15,47 +15,47 @@
 {
   // https://swagger.io/specification/#componentsObject
   new():: {
-    schema(schemaObject):: self {
+    Schema(schemaObject):: self {
       assert std.isObject(schemaObject),
       schemas+: schemaObject,
     },
 
-    response(responseObject):: self {
+    Response(responseObject):: self {
       assert std.isObject(responseObject),
       responses+: responseObject,
     }
 
-    parameter(parameterObject):: self {
+    Parameter(parameterObject):: self {
       assert std.isObject(parameterObject),
       parameters+: parameterObject,
     }
 
-    example(exampleObject):: self {
+    Example(exampleObject):: self {
       assert std.isObject(exampleObject),
       examples+: examplesObject,
     }
 
-    requestbody(requestBodyObject):: self {
+    RequestBody(requestBodyObject):: self {
       assert std.isObject(requestBodyObject),
       requestBodies+: requestBodyObject,
     }
 
-    header(headerObject):: self {
+    Header(headerObject):: self {
       assert std.isObject(headerObject),
       headers+: headerObject,
     }
 
-    securityscheme(securitySchemeObject):: self {
+    SecurityScheme(securitySchemeObject):: self {
       assert std.isObject(securitySchemeObject),
       securitySchemes+: securitySchemeObject,
     }
 
-    link(linkObject):: self {
+    Link(linkObject):: self {
       assert std.isObject(linkObject),
       links+: linkObject,
     }
 
-    callback(callbackObject):: self {
+    Callback(callbackObject):: self {
       assert std.isObject(callbackObject),
       callbacks+: callbacksObject,
     }

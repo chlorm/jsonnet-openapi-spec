@@ -15,32 +15,32 @@
 {
   // https://swagger.io/specification/#infoObject
   new():: {
-    title(s):: self {
+    Title(s):: self {
       assert std.isString(s),
       title: s,
     },
 
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       description: s,
     },
 
-    termsOfService(s):: self {
+    TermsOfService(s):: self {
       assert std.isString(s),
       termsOfService: s,
     },
 
-    contact(contactObject):: self {
+    Contact(contactObject):: self {
       assert std.isObject(contactObject),
       contact: contactObject,
     },
 
-    license(licenseObject):: self {
+    License(licenseObject):: self {
       assert std.isObject(licenseObject),
       license: licenseObject,
     },
 
-    version(s):: self {
+    Version(s):: self {
       assert std.isString(s),
       version: s,
     },

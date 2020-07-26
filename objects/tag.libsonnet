@@ -15,17 +15,17 @@
 {
   // https://swagger.io/specification/#tagObject
   new():: {
-    name(s):: self {
+    Name(s):: self {
       assert std.isString(s),
       name: s,
     },
 
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       description: s,
     },
 
-    externaldocs(externalDocsObject):: self {
+    ExternalDocs(externalDocsObject):: self {
       assert std.isObject(externalDocsObject),
       externalDocs: externalDocsObject,
     },

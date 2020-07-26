@@ -15,65 +15,64 @@
 {
   // https://swagger.io/specification/#operationObject
   new():: {
-    tag(s):: self {
+    Tag(s):: self {
       assert std.isString(s),
       tags+: [s],
     },
 
-    summary(s):: self {
+    Summary(s):: self {
       assert std.isString(s),
       summary: s,
     },
 
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       description: s,
     },
 
-    externaldocs(externalDocsObject):: self {
+    ExternalDocs(externalDocsObject):: self {
       assert std.isObject(externalDocsObject),
       externalDocs: externalDocsObject,
     },
 
-    operationid(s):: self {
+    OperationId(s):: self {
       assert std.isString(s),
       operationId: s,
     },
 
-    parameter(parameterObject):: self {
+    Parameter(parameterObject):: self {
       assert std.isObject(parameterObject),
       parameters+: [parameterObject],
     },
 
-    requestbody(requestBodyObject):: self {
+    RequestBody(requestBodyObject):: self {
       assert std.isObject(requestBodyObject),
       requestBody: requestBodyObject,
     },
 
-    response(responseObject):: self {
+    Response(responseObject):: self {
       assert std.isObject(responseObject),
       responses+: responseObject,
     },
 
-    callback(callbackObject):: self {
+    Callback(callbackObject):: self {
       assert std.isObject(callbackObject),
       callbacks+: callbackObject,
     },
 
-    deprecated(b):: self {
+    Deprecated(b):: self {
       assert std.isBoolean(b),
       deprecated: b,
     },
 
-    security(securityRequirementObject):: self {
-      assert std.isObject(serverRequirementObject),
+    Security(securityRequirementObject):: self {
+      assert std.isObject(securityRequirementObject),
       security+: [securityRequirementObject],
     },
 
-    server(serverObject):: self {
+    Server(serverObject):: self {
       assert std.isObject(serverObject),
       servers+: [serverObject],
     },
-
   },
 }

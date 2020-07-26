@@ -15,63 +15,63 @@
 {
   // https://swagger.io/specification/#pathItemObject
   new():: {
-    summary(s):: self {
+    Summary(s):: self {
       assert std.isString(s),
       summary: s,
     },
 
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       description: s,
     },
 
-    delete(operationObject):: self {
-      assert isObject(operationObject),
+    Delete(operationObject):: self {
+      assert std.isObject(operationObject),
       delete: operationObject,
     },
 
-    get(operationObject):: self {
-      assert isObject(operationObject),
+    Get(operationObject):: self {
+      assert std.isObject(operationObject),
       get: operationObject,
     },
 
-    head(operationObject):: self {
-      assert isObject(operationObject),
+    Head(operationObject):: self {
+      assert std.isObject(operationObject),
       head: operationObject,
     },
 
-    options(operationObject):: self {
-      assert isObject(operationObject),
+    Options(operationObject):: self {
+      assert std.isObject(operationObject),
       options: operationObject,
     },
 
-    patch(operationObject):: self {
-      assert isObject(operationObject),
+    Patch(operationObject):: self {
+      assert std.isObject(operationObject),
       patch: operationObject,
     },
 
-    post(operationObject):: self {
-      assert isObject(operationObject),
+    Post(operationObject):: self {
+      assert std.isObject(operationObject),
       post: operationObject,
     },
 
-    put(operationObject):: self {
-      assert isObject(operationObject),
+    Put(operationObject):: self {
+      assert std.isObject(operationObject),
       put: operationObject,
     },
 
-    trace(operationObject):: self {
-      assert isObject(operationObject),
+    Trace(operationObject):: self {
+      assert std.isObject(operationObject),
       trace: operationObject,
     },
 
-    server(serverObject):: self {
-      assert isObject(serverObject),
+    Server(serverObject):: self {
+      assert std.isObject(serverObject),
       servers+: [serverObject],
     },
 
-    parameter(parameterObject):: self {
-      assert isObject(parameterObject),
+    Parameter(parameterObject):: self {
+      assert std.isObject(parameterObject),
       parameters+: [parameterObject],
     },
   },

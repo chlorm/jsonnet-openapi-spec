@@ -15,22 +15,22 @@
 {
   // https://swagger.io/specification/#oauthFlowObject
   new():: {
-    authorizationurl(s):: self {
+    AuthorizationUrl(s):: self {
       assert std.isString(s),
       authorizationUrl: s,
     },
 
-    tokenurl(s):: self {
+    TokenUrl(s):: self {
       assert std.isString(s),
       tokenUrl: s,
     },
 
-    refreshurl(s):: self {
+    RefreshUrl(s):: self {
       assert std.isString(s),
       refreshUrl: s,
     },
 
-    scope(name, description):: self {
+    Scope(name, description):: self {
       assert std.isString(name),
       assert std.isString(description),
       scopes+: {

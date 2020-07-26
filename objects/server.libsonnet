@@ -15,17 +15,17 @@
 {
   // https://swagger.io/specification/#serverObject
   new():: {
-    url(s):: self {
+    Url(s):: self {
       assert std.isString(s),
       url: s,
     },
 
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       description: s,
     },
 
-    variable(serverVariableObject):: self {
+    Variable(serverVariableObject):: self {
       assert std.isObject(serverVariableObject),
       variables+: serverVariableObject,
     },

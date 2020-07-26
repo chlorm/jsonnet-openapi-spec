@@ -15,32 +15,32 @@
 {
   // https://swagger.io/specification/#linkObject
   new():: {
-    operationref(s):: self {
+    OperationRef(s):: self {
       assert std.isString(s),
       operationRef: s,
     },
 
-    operationid(s):: self {
+    OperationId(s):: self {
       assert std.isString(s),
       operationId: s,
     },
 
-    parameter(parameterObject):: self {
+    Parameter(parameterObject):: self {
       assert std.isObject(parameterObject),
       parameters+: parameterObject,
     },
 
-    requestbody(any):: self {
+    RequestBody(any):: self {
       assert std.type(any) != 'null',
       requestBody: any,
     },
 
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       description: s,
     },
 
-    server(serverObject):: self {
+    Server(serverObject):: self {
       assert std.isObject(serverObject),
       server: serverObject,
     },

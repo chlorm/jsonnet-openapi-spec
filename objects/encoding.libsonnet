@@ -15,27 +15,27 @@
 {
   // https://swagger.io/specification/#encodingObject
   new():: {
-    contenttype(s):: self {
+    ContentType(s):: self {
       assert std.isString(s),
       contentType: s,
     },
 
-    header(headerObject):: self {
+    Header(headerObject):: self {
       assert std.isObject(headerObject),
       headers+: headerObject,
     },
 
-    style(s):: self {
+    Style(s):: self {
       assert std.isString(s),
       style: s,
     },
 
-    explode(b):: self {
+    Explode(b):: self {
       assert std.isBoolean(b),
       explode: b,
     },
 
-    allowreserved(b):: self {
+    AllowReserved(b):: self {
       assert std.isBoolean(b),
       allowReserved: b,
     },

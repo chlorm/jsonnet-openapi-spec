@@ -18,21 +18,21 @@
   new(variable):: {
     assert std.isString(variable),
 
-    default(s):: self {
+    Default(s):: self {
       assert std.isString(s),
       [variable]+: {
         default: s,
       },
     },
 
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       [variable]+: {
         description: s,
       },
     },
 
-    enum(s):: self {
+    Enum(s):: self {
       assert std.isString(s),
       [variable]+: {
         enum+: [s],

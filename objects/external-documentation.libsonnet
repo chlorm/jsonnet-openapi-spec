@@ -15,12 +15,12 @@
 {
   // https://swagger.io/specification/#externalDocumentationObject
   new():: {
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       description: s,
     },
 
-    url(s):: self {
+    Url(s):: self {
       assert std.isString(s),
       url: s,
     },

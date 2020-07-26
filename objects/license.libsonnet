@@ -15,12 +15,12 @@
 {
   // https://swagger.io/specification/#licenseObject
   new():: {
-    name(s):: self {
+    Name(s):: self {
       assert std.isString(s),
       name: s,
     },
 
-    url(s):: self {
+    Url(s):: self {
       assert std.isString(s),
       url: s,
     },

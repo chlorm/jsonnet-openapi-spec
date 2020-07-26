@@ -15,7 +15,7 @@
 {
   // https://swagger.io/specification/#securityRequirementObject
   new():: {
-    securityscheme(name, securityScheme):: self {
+    SecurityScheme(name, securityScheme):: self {
       assert std.isString(name),
       assert std.isString(securityScheme),
       [name]+: [securityScheme],

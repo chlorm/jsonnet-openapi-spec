@@ -15,22 +15,22 @@
 {
   // https://swagger.io/specification/#exampleObject
   new():: {
-    summary(s):: self {
+    Summary(s):: self {
       assert std.isString(s),
       summary: s,
     },
 
-    deescription(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       description: s,
     },
 
-    value(any):: self {
+    Value(any):: self {
       assert: std.type(any) != 'null',
       value: any,
     },
 
-    externalValue(s):: self {
+    ExternalValue(s):: self {
       assert std.isString(s),
       externalValue: s,
     },

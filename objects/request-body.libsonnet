@@ -15,17 +15,17 @@
 {
   // https://swagger.io/specification/#requestBodyObject
   new():: {
-    description(s):: self {
+    Description(s):: self {
       assert std.isString(s),
       description: s,
     },
 
-    content(mediaTypeObject):: self {
+    Content(mediaTypeObject):: self {
       assert std.isObject(medtaTypeObject),
       content+: mediaTypeObject,
     },
 
-    required(b):: self {
+    Required(b):: self {
       assert std.isBoolean(b),
       required: b,
     },

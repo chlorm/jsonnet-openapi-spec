@@ -15,17 +15,17 @@
 {
   // https://swagger.io/specification/#mediaTypeObject
   new():: {
-    schema(schemaObject):: self {
+    Schema(schemaObject):: self {
       assert std.isObject(schemaObject),
       schema: schemaObject,
     },
 
-    example(exampleObject):: self {
+    Example(exampleObject):: self {
       assert std.isObject(exampleObject),
       examples+: exampleObject,
     },
 
-    encoding(encodingObject):: self {
+    Encoding(encodingObject):: self {
       assert std.isObject(encodingObject),
       encoding+: encodingObject,
     },

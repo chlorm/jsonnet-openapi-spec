@@ -15,27 +15,27 @@
 {
   // https://swagger.io/specification/#xmlObject
   new():: {
-    name(s):: self {
+    Name(s):: self {
       assert std.isString(s),
       name: s,
     },
 
-    namespace(s):: self {
+    Namespace(s):: self {
       assert std.isString(s),
       namespace: s,
     },
 
-    prefix(s):: self {
+    Prefix(s):: self {
       assert std.isString(s),
       prefix: s,
     },
 
-    attribute(b):: self {
+    Attribute(b):: self {
       assert std.isBoolean(b),
       attribute: b,
     },
 
-    wrapped(b):: self {
+    Wrapped(b):: self {
       assert std.isBoolean(b),
       wrapped: b,
     },
