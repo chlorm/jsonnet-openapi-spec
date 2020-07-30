@@ -15,10 +15,9 @@
 {
   // https://swagger.io/specification/#pathsObject
   new():: {
-    Path(path, pathItemObject):: self {
-      assert std.isString(path),
-      assert std.isObject(pathItemObject),
-      [path]: pathItemObject,
-    },
+    // { path: pathItemObject }
+    Path(o):: self {
+      assert std.isObject(o),
+    } + o,
   },
 }
