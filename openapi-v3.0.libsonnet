@@ -86,9 +86,9 @@
       servers+: [serverObject],
     },
 
-    Paths(pathsObject):: self {
-      assert std.isObject(pathsObject),
-      paths: pathsObject,
+    Path(pathItemObject):: self {
+      assert std.isObject(pathItemObject),
+      paths+: pathItemObject,
     },
 
     Components(componentsObject):: self {
