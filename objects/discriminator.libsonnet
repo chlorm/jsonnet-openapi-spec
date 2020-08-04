@@ -20,12 +20,12 @@
       propertyName: s,
     },
 
-    Mapping(key value):: self {
-      assert std.isString(key)
-      assert std.isString(value)
+    Mapping(key, value):: self {
+      assert std.isString(key),
+      assert std.isString(value),
       mapping+: {
         [key]: value,
-      }
+      },
     },
   },
 }

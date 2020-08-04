@@ -21,7 +21,7 @@
     },
 
     Content(mediaTypeObject):: self {
-      assert std.isObject(medtaTypeObject),
+      assert std.isObject(mediaTypeObject),
       content+: mediaTypeObject,
     },
 
