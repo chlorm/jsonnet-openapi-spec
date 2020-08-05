@@ -14,7 +14,10 @@
 
 {
   // https://swagger.io/specification/#operationObject
-  new():: {
+  new(operationIdString):: {
+    assert std.isString(operationIdString),
+    operationId: operationIdString,
+
     Tag(s):: self {
       assert std.isString(s),
       tags+: [s],
@@ -33,11 +36,6 @@
     ExternalDocs(externalDocsObject):: self {
       assert std.isObject(externalDocsObject),
       externalDocs: externalDocsObject,
-    },
-
-    OperationId(s):: self {
-      assert std.isString(s),
-      operationId: s,
     },
 
     Parameter(parameterObject):: self {

@@ -20,7 +20,7 @@ local openapi = 'openapi-spec-jsonnet/openapi.libsonnet'
     .Path(
       openapi.pathitem.new('/hello')
       .Get(
-        openapi.operation.new()
+        openapi.operation.new('getHello')
         .Response(
           openapi.response.new(200)
           .Content(
