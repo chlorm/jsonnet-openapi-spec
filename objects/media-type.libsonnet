@@ -17,6 +17,7 @@
   json:: 'application/json',
   plaintext:: 'text/plain',
   xml:: 'application/xml',
+  zip:: 'application/zip',
 
   // https://swagger.io/specification/#mediaTypeObject
   new(mimeType):: {
