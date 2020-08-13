@@ -29,11 +29,8 @@
   },
 
   // https://swagger.io/specification/#parameterObject
-  new():: {
-    Name(s):: self {
-      assert std.isString(s),
-      name: s,
-    },
+  new(nameString):: {
+    name: nameString,
 
     In(s):: self {
       assert std.isString(s),
