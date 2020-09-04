@@ -47,16 +47,12 @@
     import 'objects/parameter.libsonnet',
   pathitem::
     import 'objects/path-item.libsonnet',
-  paths::
-    import 'objects/paths.libsonnet',
   reference::
     import 'objects/reference.libsonnet',
   requestbody::
     import 'objects/request-body.libsonnet',
   response::
     import 'objects/response.libsonnet',
-  responses::
-    import 'objects/responses.libsonnet',
   //schema:: import 'objects/schema.libsonnet',
   securityrequirement::
     import 'objects/security-requirement.libsonnet',
