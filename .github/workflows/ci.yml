@@ -20,4 +20,4 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Lint jsonnet files
-        uses: chlorm/ci-jsonnet-lint
+        uses: chlorm/ci-jsonnet-lint@master
