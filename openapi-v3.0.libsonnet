@@ -87,9 +87,9 @@
       paths+: pathItemObject,
     },
 
-    Components(componentsObject):: self {
+    Component(componentsObject):: self {
       assert std.isObject(componentsObject),
-      components: componentsObject,
+      components+: componentsObject,
     },
 
     Security(securityRequirementObject):: self {
