@@ -1,5 +1,4 @@
-openapi-spec-jsonnet
-====================
+# jsonnet-openapi-spec
 
 ###### A [Jsonnet](https://jsonnet.org/) templating library for the [OpenAPI](https://www.openapis.org/) spec.
 
