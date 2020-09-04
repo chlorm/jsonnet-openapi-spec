@@ -13,6 +13,17 @@
 // limitations under the License.
 
 {
+  // Types
+  apikey:: 'apiKey',
+  http:: 'http',
+  oauth2:: 'oauth2',
+  openidconnect:: 'openIdConnect',
+
+  // In
+  cookie:: 'cookie',
+  header:: 'header',
+  query:: 'query',
+
   // https://swagger.io/specification/#securitySchemeObject
   new():: {
     Type(s):: self {
