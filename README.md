@@ -2,10 +2,12 @@
 
 ###### A [Jsonnet](https://jsonnet.org/) templating library for the [OpenAPI](https://www.openapis.org/) spec.
 
+![ci status](https://github.com/chlorm/jsonnet-openapi-spec/workflows/ci/badge.svg)
+
 ##### WARNING: API is incomplete and subject to change.
 
 ```jsonnet
-local openapi = 'openapi-spec-jsonnet/openapi.libsonnet'
+local openapi = 'jsonnet-openapi-spec/openapi.libsonnet'
 
 {
   'hello-world.json':
