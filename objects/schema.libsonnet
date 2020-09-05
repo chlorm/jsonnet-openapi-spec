@@ -37,14 +37,14 @@
   new(schemaType):: {
     assert std.isString(schemaType),
     // Validate schemaType
-    assert std.find(schemaType, [
+    assert std.member([
       $.array,
       $.boolean,
       $.integer,
       $.number,
       $.object,
       $.string,
-    ]),
+    ], schemaType),
     type: schemaType,
 
     AllOf(schemaObject):: self {
@@ -102,7 +102,7 @@
     Format(s):: self {
       assert std.isString(s),
       // Validate format
-      assert std.find(s, [
+      assert std.member([
         $.binary,
         $.byte,
         $.date,
@@ -112,7 +112,7 @@
         $.int32,
         $.int64,
         $.password,
-      ]),
+      ], s),
       format: s,
     },
 
