@@ -93,6 +93,11 @@
     assert std.isNumber(status) || status == 'default',
     local statusString = std.toString(status),
 
+    [std.toString(status)]: {
+      // default is empty
+      description: ""
+    },
+
     Description(s):: self {
       assert std.isString(s),
       [statusString]+: {

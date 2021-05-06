@@ -15,6 +15,10 @@
 {
   // https://swagger.io/specification/#infoObject
   new():: {
+
+    title: error "info title required",
+    version: error "info version required",
+
     Title(s):: self {
       assert std.isString(s),
       title: s,

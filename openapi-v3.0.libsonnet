@@ -73,6 +73,8 @@
   new():: {
     openapi: '3.0.3',
 
+    info: error "info required",
+
     Info(infoObject):: self {
       assert std.isObject(infoObject),
       info: infoObject,
